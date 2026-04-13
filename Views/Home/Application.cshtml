@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Adoption Application";
+}
+
+<div class="container mt-5 p-4 border rounded bg-light">
+
+    <h2 class="text-center mb-4">
+        You've selected @ViewBag.Name
+    </h2>
+
+    <p class="text-center">
+        Pet Name: <b>@ViewBag.Name</b><br>
+        Pet Type: <b>@ViewBag.Type</b>
+    </p>
+
+    <hr>
+
+    <h4>Application Form</h4>
+
+    <form>
+
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input type="number" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Work</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Number</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Reason for adopting</label>
+            <textarea class="form-control" rows="4"></textarea>
+        </div>
+
+        <p class="mt-4 text-muted">
+            Note: The animal has been vaccinated, neutered, and is worm-and tick free.
+            The adoption fee is treated as a donation to support rescued animals.
+        </p>
+
+        <a href="/Home/SubmitApplication" class="btn btn-primary w-100">
+            Submit Application
+        </a>
+
+    </form>
+
+</div>
